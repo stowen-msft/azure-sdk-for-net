@@ -22,16 +22,16 @@
       "ResponseHeaders": {
         "Content-Length": "623",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Tue, 18 Aug 2020 20:20:55 GMT",
-        "ETag": "\u0022MTM0MjYyMjg4\u0022",
+        "Date": "Wed, 19 Aug 2020 00:08:22 GMT",
+        "ETag": "\u0022NDM1MTM3MDQz\u0022",
         "Server": "Microsoft-HTTPAPI/2.0",
         "Vary": "Origin",
-        "x-ms-request-id": "a4e0b292-02da-4e53-8267-9221004b9ce2"
+        "x-ms-request-id": "cb8965cf-c2b2-40c3-9bb6-5b5fe2a90b8f"
       },
       "ResponseBody": {
         "deviceId": "QueryDevice1136733538",
-        "generationId": "637333788554042965",
-        "etag": "MTM0MjYyMjg4",
+        "generationId": "637333925028775208",
+        "etag": "NDM1MTM3MDQz",
         "connectionState": "Disconnected",
         "status": "enabled",
         "statusReason": null,
@@ -41,8 +41,8 @@
         "cloudToDeviceMessageCount": 0,
         "authentication": {
           "symmetricKey": {
-            "primaryKey": "zkXqhhTN8hw8aOES8h/Zli/cxoFz/Da9A/05CBBlwxI=",
-            "secondaryKey": "fWlxsCbIgNP1WMXjlZBi\u002BkzaHGS0NhwLA9sQ3c5Egtc="
+            "primaryKey": "XP\u002B/jjPwoH8nM2XU3if7\u002BuF\u002BvR7Qj/gPncqbWOZqj0I=",
+            "secondaryKey": "2pYJVrfbSW32NoVWTFcUs8ILGEILIVK9oi3p60Mnt7M="
           },
           "x509Thumbprint": {
             "primaryThumbprint": null,
@@ -77,11 +77,11 @@
       "ResponseHeaders": {
         "Content-Length": "2",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Tue, 18 Aug 2020 20:20:55 GMT",
+        "Date": "Wed, 19 Aug 2020 00:08:23 GMT",
         "Server": "Microsoft-HTTPAPI/2.0",
         "Vary": "Origin",
         "x-ms-item-type": "Twin",
-        "x-ms-request-id": "174832c3-f520-4b7d-8fe7-48875c403f42"
+        "x-ms-request-id": "12c5c782-897b-4af6-82d2-73691ffb7f4d"
       },
       "ResponseBody": "[]"
     },
@@ -106,13 +106,13 @@
       "ResponseHeaders": {
         "Content-Length": "583",
         "Content-Type": "application/json; charset=utf-8",
-        "Date": "Tue, 18 Aug 2020 20:21:00 GMT",
+        "Date": "Wed, 19 Aug 2020 00:08:28 GMT",
         "Server": "Microsoft-HTTPAPI/2.0",
         "Vary": "Origin",
         "x-ms-item-type": "Twin",
-        "x-ms-request-id": "d45aa639-d37e-4782-ba27-ec8be24aca04"
+        "x-ms-request-id": "9572adaf-ed07-4b79-9760-aaf5283f0803"
       },
-      "ResponseBody": "[{\u0022deviceId\u0022:\u0022QueryDevice1136733538\u0022,\u0022etag\u0022:\u0022AAAAAAAAAAE=\u0022,\u0022deviceEtag\u0022:\u0022MTM0MjYyMjg4\u0022,\u0022status\u0022:\u0022enabled\u0022,\u0022statusUpdateTime\u0022:\u00220001-01-01T00:00:00Z\u0022,\u0022connectionState\u0022:\u0022Disconnected\u0022,\u0022lastActivityTime\u0022:\u00220001-01-01T00:00:00Z\u0022,\u0022cloudToDeviceMessageCount\u0022:0,\u0022authenticationType\u0022:\u0022sas\u0022,\u0022x509Thumbprint\u0022:{\u0022primaryThumbprint\u0022:null,\u0022secondaryThumbprint\u0022:null},\u0022version\u0022:2,\u0022properties\u0022:{\u0022desired\u0022:{\u0022$metadata\u0022:{\u0022$lastUpdated\u0022:\u00222020-08-18T20:20:55.4042965Z\u0022},\u0022$version\u0022:1},\u0022reported\u0022:{\u0022$metadata\u0022:{\u0022$lastUpdated\u0022:\u00222020-08-18T20:20:55.4042965Z\u0022},\u0022$version\u0022:1}},\u0022capabilities\u0022:{\u0022iotEdge\u0022:false}}]"
+      "ResponseBody": "[{\u0022deviceId\u0022:\u0022QueryDevice1136733538\u0022,\u0022etag\u0022:\u0022AAAAAAAAAAE=\u0022,\u0022deviceEtag\u0022:\u0022NDM1MTM3MDQz\u0022,\u0022status\u0022:\u0022enabled\u0022,\u0022statusUpdateTime\u0022:\u00220001-01-01T00:00:00Z\u0022,\u0022connectionState\u0022:\u0022Disconnected\u0022,\u0022lastActivityTime\u0022:\u00220001-01-01T00:00:00Z\u0022,\u0022cloudToDeviceMessageCount\u0022:0,\u0022authenticationType\u0022:\u0022sas\u0022,\u0022x509Thumbprint\u0022:{\u0022primaryThumbprint\u0022:null,\u0022secondaryThumbprint\u0022:null},\u0022version\u0022:2,\u0022properties\u0022:{\u0022desired\u0022:{\u0022$metadata\u0022:{\u0022$lastUpdated\u0022:\u00222020-08-19T00:08:22.8775208Z\u0022},\u0022$version\u0022:1},\u0022reported\u0022:{\u0022$metadata\u0022:{\u0022$lastUpdated\u0022:\u00222020-08-19T00:08:22.8775208Z\u0022},\u0022$version\u0022:1}},\u0022capabilities\u0022:{\u0022iotEdge\u0022:false}}]"
     },
     {
       "RequestUri": "https://FakeHost.net/devices/QueryDevice1136733538?api-version=2020-03-13",
@@ -131,10 +131,10 @@
       "StatusCode": 204,
       "ResponseHeaders": {
         "Content-Length": "0",
-        "Date": "Tue, 18 Aug 2020 20:21:05 GMT",
+        "Date": "Wed, 19 Aug 2020 00:08:33 GMT",
         "Server": "Microsoft-HTTPAPI/2.0",
         "Vary": "Origin",
-        "x-ms-request-id": "d9124760-8253-446d-9cb7-69d2b38350c5"
+        "x-ms-request-id": "2cc1ce44-c69d-4574-9ba8-dccbc993303b"
       },
       "ResponseBody": []
     }

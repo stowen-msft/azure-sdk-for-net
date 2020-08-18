@@ -14,5 +14,6 @@ namespace Azure.Iot.Hub.Service.Tests
         }
 
         public string IotHubConnectionString => GetRecordedVariable(TestSettings.IotHubConnectionString);
+        public string StorageConnectionString => GetRecordedVariable(TestSettings.StorageConnectionString);
     }
 }

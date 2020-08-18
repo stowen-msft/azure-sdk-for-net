@@ -3,7 +3,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Azure.Core;
@@ -16,18 +15,18 @@ namespace Azure.Iot.Hub.Service
     /// </summary>
     public class JobsClient
     {
-        private readonly JobRestClient _jobRestClient;
+        private readonly JobsRestClient _jobsRestClient;
 
         protected JobsClient()
         {
             // This constructor only exists for mocking purposes.
         }
 
-        internal JobsClient(JobRestClient jobRestClient)
+        internal JobsClient(JobsRestClient jobRestClient)
         {
             Argument.AssertNotNull(jobRestClient, nameof(jobRestClient));
 
-            _jobRestClient = jobRestClient;
+            _jobsRestClient = jobRestClient;
         }
 
         /// <summary>
@@ -55,7 +54,7 @@ namespace Azure.Iot.Hub.Service
                 OutputBlobName = options?.OutputBlobName
             };
 
-            return _jobRestClient.CreateImportExportJob(jobProperties, cancellationToken);
+            return _jobsRestClient.CreateImportExportJob(jobProperties, cancellationToken);
         }
 
         /// <summary>
@@ -83,7 +82,7 @@ namespace Azure.Iot.Hub.Service
                 OutputBlobName = options?.OutputBlobName
             };
 
-            return _jobRestClient.CreateImportExportJobAsync(jobProperties, cancellationToken);
+            return _jobsRestClient.CreateImportExportJobAsync(jobProperties, cancellationToken);
         }
 
         /// <summary>
@@ -113,7 +112,7 @@ namespace Azure.Iot.Hub.Service
                 InputBlobName = options?.InputBloblName
             };
 
-            return _jobRestClient.CreateImportExportJob(jobProperties, cancellationToken);
+            return _jobsRestClient.CreateImportExportJob(jobProperties, cancellationToken);
         }
 
         /// <summary>
@@ -143,7 +142,7 @@ namespace Azure.Iot.Hub.Service
                 InputBlobName = options?.InputBloblName
             };
 
-            return _jobRestClient.CreateImportExportJobAsync(jobProperties, cancellationToken);
+            return _jobsRestClient.CreateImportExportJobAsync(jobProperties, cancellationToken);
         }
 
         /// <summary>
@@ -153,7 +152,7 @@ namespace Azure.Iot.Hub.Service
         /// <returns>IEnumerable of JobProperties of all jobs for this IoT Hub.</returns>
         public virtual Response<IReadOnlyList<JobProperties>> GetImportExportJobs(CancellationToken cancellationToken = default)
         {
-            return _jobRestClient.GetImportExportJobs(cancellationToken);
+            return _jobsRestClient.GetImportExportJobs(cancellationToken);
         }
 
         /// <summary>
@@ -163,7 +162,7 @@ namespace Azure.Iot.Hub.Service
         /// <returns>IEnumerable of JobProperties of all jobs for this IoT Hub.</returns>
         public virtual Task<Response<IReadOnlyList<JobProperties>>> GetImportExportJobsAsync(CancellationToken cancellationToken = default)
         {
-            return _jobRestClient.GetImportExportJobsAsync(cancellationToken);
+            return _jobsRestClient.GetImportExportJobsAsync(cancellationToken);
         }
 
         /// <summary>
@@ -176,7 +175,7 @@ namespace Azure.Iot.Hub.Service
         {
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            return _jobRestClient.GetImportExportJob(jobId, cancellationToken);
+            return _jobsRestClient.GetImportExportJob(jobId, cancellationToken);
         }
 
         /// <summary>
@@ -189,7 +188,7 @@ namespace Azure.Iot.Hub.Service
         {
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            return _jobRestClient.GetImportExportJobAsync(jobId, cancellationToken);
+            return _jobsRestClient.GetImportExportJobAsync(jobId, cancellationToken);
         }
 
         /// <summary>
@@ -202,7 +201,7 @@ namespace Azure.Iot.Hub.Service
         {
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            return _jobRestClient.CancelImportExportJob(jobId);
+            return _jobsRestClient.CancelImportExportJob(jobId);
         }
     }
 }

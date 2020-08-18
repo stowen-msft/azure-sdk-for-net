@@ -8,7 +8,7 @@ using Azure.Core;
 
 namespace Azure.Iot.Hub.Service
 {
-    internal partial class JobRestClient
+    internal partial class JobsRestClient
     {
         internal Response<string> CancelImportExportJob(string id, CancellationToken cancellationToken = default)
         {

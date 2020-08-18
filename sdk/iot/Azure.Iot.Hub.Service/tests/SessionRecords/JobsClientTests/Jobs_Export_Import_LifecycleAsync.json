@@ -1,0 +1,384 @@
+{
+  "Entries": [
+    {
+      "RequestUri": "https://FakeHost.net/devices?api-version=2020-03-13",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "Content-Length": "349",
+        "Content-Type": "application/json",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "de7b7fab74cb3ebb688cb0df90581731",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": "[{\u0022id\u0022:\u0022jobDevice1808659919\u0022,\u0022importMode\u0022:\u0022create\u0022,\u0022status\u0022:\u0022enabled\u0022},{\u0022id\u0022:\u0022jobDevice1056013129\u0022,\u0022importMode\u0022:\u0022create\u0022,\u0022status\u0022:\u0022enabled\u0022},{\u0022id\u0022:\u0022jobDevice334655816\u0022,\u0022importMode\u0022:\u0022create\u0022,\u0022status\u0022:\u0022enabled\u0022},{\u0022id\u0022:\u0022jobDevice188594520\u0022,\u0022importMode\u0022:\u0022create\u0022,\u0022status\u0022:\u0022enabled\u0022},{\u0022id\u0022:\u0022jobDevice1188852856\u0022,\u0022importMode\u0022:\u0022create\u0022,\u0022status\u0022:\u0022enabled\u0022}]",
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "47",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:00 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "87bb1426-41e5-4e9a-b3cc-d9901e917747"
+      },
+      "ResponseBody": {
+        "isSuccessful": true,
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/jobs/create?api-version=2020-03-13",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "Content-Length": "300",
+        "Content-Type": "application/json",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "1a2c2f5995bf75e9cb46a27ec9acf3e4",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": {
+        "type": "export",
+        "outputBlobContainerUri": "https://vinageshtrack2iothub.blob.core.windows.net/jobs500596369?sv=2019-02-02\u0026sr=c\u0026sig=W2X9mqVQpl4q%2B70WGXRrCIXnwpv9Qh25dQJJZNM8U9c%3D\u0026st=2020-08-19T00%3A08%3A58Z\u0026se=2020-08-19T01%3A08%3A58Z\u0026sp=racwdl",
+        "excludeKeysInExport": false
+      },
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "437",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:00 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "9990d8fa-8f91-4946-a325-7a89dc7b33ad"
+      },
+      "ResponseBody": {
+        "jobId": "0ef802cd-c89b-4122-8bdf-d118da4236f4",
+        "startTimeUtc": "2020-08-19T00:09:00.1815806Z",
+        "type": "export",
+        "status": "enqueued",
+        "progress": 0,
+        "outputBlobContainerUri": "https://vinageshtrack2iothub.blob.core.windows.net/jobs500596369?sv=2019-02-02\u0026sr=c\u0026sig=W2X9mqVQpl4q%2B70WGXRrCIXnwpv9Qh25dQJJZNM8U9c%3D\u0026st=2020-08-19T00%3A08%3A58Z\u0026se=2020-08-19T01%3A08%3A58Z\u0026sp=racwdl",
+        "excludeKeysInExport": false,
+        "useSecondaryStorageAsSource": false
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/jobs/0ef802cd-c89b-4122-8bdf-d118da4236f4?api-version=2020-03-13",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "c030eb100c6ac330cc041239f0486956",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "235",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:00 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "fd5a7211-b83c-4e02-805c-50f7113b69dd"
+      },
+      "ResponseBody": {
+        "jobId": "0ef802cd-c89b-4122-8bdf-d118da4236f4",
+        "startTimeUtc": "2020-08-19T00:09:00.1815806Z",
+        "type": "export",
+        "status": "enqueued",
+        "progress": 0,
+        "outputBlobContainerUri": "",
+        "excludeKeysInExport": false,
+        "useSecondaryStorageAsSource": false
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/jobs/0ef802cd-c89b-4122-8bdf-d118da4236f4?api-version=2020-03-13",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "1a755fa33d1b16b996061284d23d75bb",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "282",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:04 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "d6616530-c0aa-4841-ad43-46d44660aa41"
+      },
+      "ResponseBody": {
+        "jobId": "0ef802cd-c89b-4122-8bdf-d118da4236f4",
+        "startTimeUtc": "2020-08-19T00:09:00.1815806Z",
+        "endTimeUtc": "2020-08-19T00:09:02.0381082Z",
+        "type": "export",
+        "status": "completed",
+        "progress": 100,
+        "outputBlobContainerUri": "",
+        "excludeKeysInExport": false,
+        "useSecondaryStorageAsSource": false
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/jobs/create?api-version=2020-03-13",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "Content-Length": "590",
+        "Content-Type": "application/json",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "a5cfcb9956274dc7fe684dbb82af8483",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": {
+        "type": "import",
+        "inputBlobContainerUri": "https://vinageshtrack2iothub.blob.core.windows.net/jobs500596369?sv=2019-02-02\u0026sr=c\u0026sig=W2X9mqVQpl4q%2B70WGXRrCIXnwpv9Qh25dQJJZNM8U9c%3D\u0026st=2020-08-19T00%3A08%3A58Z\u0026se=2020-08-19T01%3A08%3A58Z\u0026sp=racwdl",
+        "outputBlobContainerUri": "https://vinageshtrack2iothub.blob.core.windows.net/jobs500596369?sv=2019-02-02\u0026sr=c\u0026sig=W2X9mqVQpl4q%2B70WGXRrCIXnwpv9Qh25dQJJZNM8U9c%3D\u0026st=2020-08-19T00%3A08%3A58Z\u0026se=2020-08-19T01%3A08%3A58Z\u0026sp=racwdl",
+        "outputBlobName": "Devices.txt",
+        "storageAuthenticationType": null
+      },
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "697",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:09 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "8b63e22a-613d-434c-bbfd-88ad982e0235"
+      },
+      "ResponseBody": {
+        "jobId": "ff21d956-510e-48b0-8154-ff02ad1fe51a",
+        "startTimeUtc": "2020-08-19T00:09:10.4620848Z",
+        "type": "import",
+        "status": "enqueued",
+        "progress": 0,
+        "inputBlobContainerUri": "https://vinageshtrack2iothub.blob.core.windows.net/jobs500596369?sv=2019-02-02\u0026sr=c\u0026sig=W2X9mqVQpl4q%2B70WGXRrCIXnwpv9Qh25dQJJZNM8U9c%3D\u0026st=2020-08-19T00%3A08%3A58Z\u0026se=2020-08-19T01%3A08%3A58Z\u0026sp=racwdl",
+        "outputBlobContainerUri": "https://vinageshtrack2iothub.blob.core.windows.net/jobs500596369?sv=2019-02-02\u0026sr=c\u0026sig=W2X9mqVQpl4q%2B70WGXRrCIXnwpv9Qh25dQJJZNM8U9c%3D\u0026st=2020-08-19T00%3A08%3A58Z\u0026se=2020-08-19T01%3A08%3A58Z\u0026sp=racwdl",
+        "outputBlobName": "Devices.txt",
+        "excludeKeysInExport": false,
+        "useSecondaryStorageAsSource": false
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/jobs/ff21d956-510e-48b0-8154-ff02ad1fe51a?api-version=2020-03-13",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "69da4bdcd937d2c9321a2a63faabf18f",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "235",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:09 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "2cde18bd-2482-47be-9f51-25ec7fe29826"
+      },
+      "ResponseBody": {
+        "jobId": "ff21d956-510e-48b0-8154-ff02ad1fe51a",
+        "startTimeUtc": "2020-08-19T00:09:10.4620848Z",
+        "type": "import",
+        "status": "enqueued",
+        "progress": 0,
+        "outputBlobContainerUri": "",
+        "excludeKeysInExport": false,
+        "useSecondaryStorageAsSource": false
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/jobs/ff21d956-510e-48b0-8154-ff02ad1fe51a?api-version=2020-03-13",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "25a0568ec4784d2e97281bb2effd93e6",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "234",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:14 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "cd0871fb-588d-4ee6-a165-79642790cc57"
+      },
+      "ResponseBody": {
+        "jobId": "ff21d956-510e-48b0-8154-ff02ad1fe51a",
+        "startTimeUtc": "2020-08-19T00:09:10.4620848Z",
+        "type": "import",
+        "status": "running",
+        "progress": 0,
+        "outputBlobContainerUri": "",
+        "excludeKeysInExport": false,
+        "useSecondaryStorageAsSource": false
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/jobs/ff21d956-510e-48b0-8154-ff02ad1fe51a?api-version=2020-03-13",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "86a78e810b62bf8402fc730d2b635252",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "234",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:20 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "0911d065-a065-45fc-b2ea-ef1e73fd5894"
+      },
+      "ResponseBody": {
+        "jobId": "ff21d956-510e-48b0-8154-ff02ad1fe51a",
+        "startTimeUtc": "2020-08-19T00:09:10.4620848Z",
+        "type": "import",
+        "status": "running",
+        "progress": 0,
+        "outputBlobContainerUri": "",
+        "excludeKeysInExport": false,
+        "useSecondaryStorageAsSource": false
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/jobs/ff21d956-510e-48b0-8154-ff02ad1fe51a?api-version=2020-03-13",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "2b2cbe775f0e180b1d8dd20ebd16e334",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "234",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:25 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "90d4ed41-c14d-434c-bbec-8335e07b95df"
+      },
+      "ResponseBody": {
+        "jobId": "ff21d956-510e-48b0-8154-ff02ad1fe51a",
+        "startTimeUtc": "2020-08-19T00:09:10.4620848Z",
+        "type": "import",
+        "status": "running",
+        "progress": 0,
+        "outputBlobContainerUri": "",
+        "excludeKeysInExport": false,
+        "useSecondaryStorageAsSource": false
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/jobs/ff21d956-510e-48b0-8154-ff02ad1fe51a?api-version=2020-03-13",
+      "RequestMethod": "GET",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "6be243866a03822cd2e1227b51212133",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": null,
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "282",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:30 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "0749b180-4ce0-4416-8bc8-7153eec5e90b"
+      },
+      "ResponseBody": {
+        "jobId": "ff21d956-510e-48b0-8154-ff02ad1fe51a",
+        "startTimeUtc": "2020-08-19T00:09:10.4620848Z",
+        "endTimeUtc": "2020-08-19T00:09:27.6186219Z",
+        "type": "import",
+        "status": "completed",
+        "progress": 100,
+        "outputBlobContainerUri": "",
+        "excludeKeysInExport": false,
+        "useSecondaryStorageAsSource": false
+      }
+    },
+    {
+      "RequestUri": "https://FakeHost.net/devices?api-version=2020-03-13",
+      "RequestMethod": "POST",
+      "RequestHeaders": {
+        "Authorization": "Sanitized",
+        "Content-Length": "309",
+        "Content-Type": "application/json",
+        "User-Agent": [
+          "azsdk-net-Iot.Hub.Service/1.0.0-dev.20200818.1",
+          "(.NET Core 4.6.28516.03; Microsoft Windows 10.0.18363 )"
+        ],
+        "x-ms-client-request-id": "313bc8d568d122d8838f69d5397602ec",
+        "x-ms-return-client-request-id": "true"
+      },
+      "RequestBody": "[{\u0022id\u0022:\u0022jobDevice1808659919\u0022,\u0022importMode\u0022:\u0022deleteIfMatchETag\u0022},{\u0022id\u0022:\u0022jobDevice1056013129\u0022,\u0022importMode\u0022:\u0022deleteIfMatchETag\u0022},{\u0022id\u0022:\u0022jobDevice334655816\u0022,\u0022importMode\u0022:\u0022deleteIfMatchETag\u0022},{\u0022id\u0022:\u0022jobDevice188594520\u0022,\u0022importMode\u0022:\u0022deleteIfMatchETag\u0022},{\u0022id\u0022:\u0022jobDevice1188852856\u0022,\u0022importMode\u0022:\u0022deleteIfMatchETag\u0022}]",
+      "StatusCode": 200,
+      "ResponseHeaders": {
+        "Content-Length": "47",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 19 Aug 2020 00:09:35 GMT",
+        "Server": "Microsoft-HTTPAPI/2.0",
+        "Vary": "Origin",
+        "x-ms-request-id": "7181860b-1840-4003-aaa8-e9342b164cab"
+      },
+      "ResponseBody": {
+        "isSuccessful": true,
+        "errors": [],
+        "warnings": []
+      }
+    }
+  ],
+  "Variables": {
+    "IOT_HUB_CONNECTION_STRING": "HostName=FakeHost.net;SharedAccessKeyName=iothubowner;SharedAccessKey=Kg==;",
+    "RandomSeed": "1863545485",
+    "STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=vinageshtrack2iothub;AccountKey=O667D/GPr3Tn8VkiluWvWWET0c/n5fH7zm8WQFcYUxC5bjnsjIRjxVhX28rbvxv2iAvcfC5k5gmXrYWNrvkvkw==;EndpointSuffix=core.windows.net"
+  }
+}

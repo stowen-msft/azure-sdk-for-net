@@ -18,6 +18,7 @@ namespace Azure.Iot.Hub.Service.Tests
             variableName switch
             {
                 TestSettings.IotHubConnectionString => SanitizeConnectionString(environmentVariableValue),
+                TestSettings.StorageConnectionString => SanitizeConnectionString(environmentVariableValue),
                 _ => base.SanitizeVariable(variableName, environmentVariableValue)
             };
 
