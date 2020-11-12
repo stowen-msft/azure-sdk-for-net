@@ -12,11 +12,12 @@ namespace Microsoft.Azure.Management.AutoManage.Models
 {
 
     /// <summary>
-    /// Defines values for RunScheduledScan.
+    /// Defines values for ProvisioningState.
     /// </summary>
-    public static class RunScheduledScan
+    public static class ProvisioningState
     {
-        public const string True = "True";
-        public const string False = "False";
+        public const string Succeeded = "Succeeded";
+        public const string Failed = "Failed";
+        public const string Created = "Created";
     }
 }

@@ -8,7 +8,7 @@
 // regenerated.
 // </auto-generated>
 
-namespace Microsoft.Azure.Management.Automanage.Models
+namespace Microsoft.Azure.Management.AutoManage.Models
 {
 
     /// <summary>
@@ -16,7 +16,7 @@ namespace Microsoft.Azure.Management.Automanage.Models
     /// </summary>
     public static class ConfigurationProfile
     {
-        public const string AzureBestPracticesTestDev = "Azure Best Practices - TestDev";
-        public const string AzureBestPracticesProd = "Azure Best Practices - Prod";
+        public const string AzurevirtualmachinebestpracticesDevTest = "Azure virtual machine best practices – Dev/Test";
+        public const string AzurevirtualmachinebestpracticesProduction = "Azure virtual machine best practices – Production";
     }
 }
